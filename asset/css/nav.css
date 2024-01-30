@@ -1,0 +1,92 @@
+
+.header-section {
+    padding: 15px 0;
+  }
+  .header-section .search-filter input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 6px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+  }
+  .header-section .search-filter select {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    border-left: 0;
+    padding: 6px 12px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 600;
+  }
+  .header-section .search-filter select option {
+    background-color: #00204B;
+    margin-bottom: 2px;
+  }
+  .header-section .search-filter .sub-btn {
+    border: none;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    padding: 6px;
+  }
+  .header-section .right-col button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    transition: 0.4s;
+  }
+  .header-section .right-col button:hover {
+    color: #28A349;
+  }
+  .header-section .right-col .login-btn {
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .header-section .right-col .login-btn:hover {
+    color: #28A349;
+  }
+  .header-section .right-col select {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+  .header-section .right-col select option {
+    background-color: #00204B;
+  }
+  
+  .footer-section .delivery-row h3 {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+  .footer-section .delivery-row h4 {
+    color: #000;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 400;
+  }/*# sourceMappingURL=style.css.map */
