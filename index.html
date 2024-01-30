@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHAKA-PHARMACY</title>
     <link rel="icon" type="image/x-icon" href="asset/img/fab-icon.png">
+    <!-- goolge fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- custiom css -->
@@ -42,10 +44,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-5">
                         <div class="search-filter col-8 m-auto">
                             <form class="d-flex" action="">
-                                <input class="col-7" type="text" placeholder="Search...">
+                                <input class="col-7" type="text" id="searchInput" placeholder="Search...">
                                 <select class="col-3" name="" id="">
                                     <option value="volvo">All Category</option>
                                     <option value="saab">Saab</option>
@@ -54,9 +56,11 @@
                                 </select>
                                 <button class="sub-btn text-center bg-white col-1" type="submit"><i class="fa-solid fa-magnifying-glass text-dark"></i></button>
                             </form>
+                            <div id="suggestionBox" class="suggestion-box"></div>
+                            
                         </div>
                     </div>                                   
-                    <div class="col-3 right-col">
+                    <div class="col-4 right-col">
                         <div class="row align-items-center">
                             <div class="col-3 text-center">
                                 <button class="cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartbtn" aria-controls="offcanvasRight">
@@ -109,7 +113,7 @@
     <!-------- Header-section-End ------------>
 
     <!--------- Footer-secion-Start ---------->
-    <footer>
+    <!-- <footer>
         <div class="footer-section">
             <div class="delivery-row">
                 <div class="container">
@@ -178,9 +182,13 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer> -->
     <!--------- Footer-secion-End ---------->
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- jquery-cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- custom-js -->
+    <script src="/asset/js/custom.js"></script>
 </body>
 </html>
