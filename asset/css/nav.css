@@ -1,4 +1,4 @@
-
+/*=========== Header Nav css ==========*/
 .header-section {
     padding: 15px 0;
     background: var(--nav-primary-bg);
@@ -82,7 +82,7 @@
   .header-section .search-filter .suggestion-box{
     background: var(--nav-text-color);
     position: absolute;
-    width: calc(100% - 40px);
+    width: 100%;
     border: 1px solid #000;
     padding: 10px;
     display: none;
