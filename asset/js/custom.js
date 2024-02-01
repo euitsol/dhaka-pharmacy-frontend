@@ -42,3 +42,11 @@ $(document).ready(function() {
         $suggestionBox.css('display', 'none');
     });
 });
+
+// Homepage top slider
+const myCarouselElement = document.querySelector('#carouselExampleCaptions')
+
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 4000,
+  ride : true
+})

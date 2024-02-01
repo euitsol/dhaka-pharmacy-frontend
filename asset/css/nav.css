@@ -2,6 +2,10 @@
 .header-section {
     padding: 15px 0;
     background: var(--nav-primary-bg);
+    animation: fadeIndown 1.5s ease-in-out;
+    position: sticky;
+    top: 0;
+    z-index: 99;
   }
   .header-section .search-filter input {
     border: none;
