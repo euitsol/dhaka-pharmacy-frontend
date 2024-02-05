@@ -36,37 +36,46 @@ body{
   z-index: 9;
 }
 .sidebar-cat-section .sticky-col{
-  position: fixed;
-  top: 107px;
-  max-width: 23%;
-  z-index: -1;
   background: var(--text-color-white);
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 10px;
 }
+.sidebar-cat-section .row .single-cat {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
 .sidebar-cat-section .row .single-cat h2 {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 31px;
+  font-size: 14px;
+  line-height: 20px;
   font-weight: 500;
   color: var(--text-color-black);
   transition: 0.4s;
 }
 
-.sidebar-cat-section.row .single-cat .icon {
+.sidebar-cat-section .row .single-cat .icon {
   max-width: 25px;
+  min-height: 40px;
   transition: 0.4s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar-cat-section .cat-title {
   font-family: "Open Sans", sans-serif;
   font-size: 20px;
   line-height: 27px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: uppercase;
   color: var(--text-color-white);
   background: var(--secundary-color);
-  padding: 12px 0;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
 }
 
 .sidebar-cat-section .single-cat {
@@ -249,6 +258,8 @@ body{
   border-radius: 15px;
   padding: 30px 15px;
   background: var(--text-color-white);
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .product-section .best-selling-col .single-item img{
@@ -308,7 +319,6 @@ body{
 .product-section .all-products .single-pdct{
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 2px 2px;
   border-radius: 15px;
-  width: 23.5%;
 }
 .product-section .all-products .single-pdct .pdct-img{
   background: #E9E9E9;
@@ -350,8 +360,7 @@ body{
   transition: 0.4s;
 }
 .product-section .all-products {
-  column-gap: 20px;
-  row-gap: 35px;
+  row-gap: 30px;
 }
 .product-section .all-products .pdct-info .cart-btn:hover{
   color: var(--text-color-black);
@@ -379,9 +388,6 @@ body{
   background: transparent;
 }
 /*============ Home Delivery Section ================*/
-.delivery-slider-section{
-  width: calc(100% + 30px);
-}
 .delivery-slider-section .carousel .carousel-inner img{
   height: 300px;
   object-fit: contain;

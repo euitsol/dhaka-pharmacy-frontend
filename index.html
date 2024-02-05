@@ -14,7 +14,8 @@
     <!--========== bootstrap css ==========-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <!--========= uikit css =========-->
+    <!-- <link rel="stylesheet" href="asset/css/uikit.min.css"> -->
     <!--========= custiom css =========-->
     <link rel="stylesheet" href="asset/css/nav.css">
     <link rel="stylesheet" href="asset/css/style.css">
@@ -28,7 +29,7 @@
     <!--------- Header-section-Start ----------->
     <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
     <header>
-        <div class="header-section">
+        <section class="header-section">
             <div class="container-fluid">
                 <div class="row align-items-center">
                     <div class="col-3">
@@ -57,7 +58,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-5">
+                    <div class="col-6">
                         <div class="search-filter col-8 m-auto">
                             <form class="d-flex" action="">
                                 <input class="col-7" type="text" id="searchInput" placeholder="Search...">
@@ -74,9 +75,9 @@
 
                         </div>
                     </div>
-                    <div class="col-4 right-col">
-                        <div class="row align-items-center">
-                            <div class="col-3 text-center">
+                    <div class="col-3 right-col">
+                        <div class="row align-items-center justify-content-end">
+                            <div class="item">
                                 <button class="cart-btn" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#cartbtn" aria-controls="offcanvasRight">
                                     <i class="fa-solid fa-cart-shopping me-1"></i>
@@ -94,13 +95,13 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="item">
                                 <a href="#" class="login-btn">
                                     <i class="fa-regular fa-user me-1"></i>
                                     <span>Login/Register</span>
                                 </a>
                             </div>
-                            <div class="col-3">
+                            <div class="item">
                                 <button class="wish-btn bg-none" type="button" data-bs-toggle="offcanvas"
                                     data-bs-target="#wishlist" aria-controls="offcanvasRight">
                                     <i class="fa-regular fa-heart me-1"></i>
@@ -118,7 +119,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2">
+                            <div class="item">
                                 <select name="" id="">
                                     <option value="english">English</option>
                                     <option value="bangla">Bangla</option>
@@ -128,7 +129,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </header>
     <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
     <!--------- Main Cotent Area ---------->
@@ -136,96 +137,76 @@
     <main>
         <div class="container-fluid">
             <div class="row py-4">
-                <div class="col-3 sidebar-cat-section">
-                    <div class="col sticky-col">
-                        <h2 class="text-center cat-title py-2">Categories</h2>
+                <section class="col-md-3 col-lg-2 sidebar-cat-section">
+                    <div class="col sticky-col pb-4">
+                        <h2 class="text-center cat-title">Categories</h2>
                         <div class="row mt-4 px-4">
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/medicin.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Medicine</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/Diagnostic-Center.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Diagnostic Center</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/dental.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Dental Care</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/Surgical-Product.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Surgical Product</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/Medical-Equipment.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Medical Equipment</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/baby-care.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Baby Care</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/woman-care.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Women's Care</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/personal-care.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Personal Care</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a href="#" class="box text-decoration-none">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/dental.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Dental Care</h2>
-                                </a>
-                            </div>
-                            <div class="col-6 text-center single-cat">
-                                <a class="box text-decoration-none" href="#">
-                                    <div class="icon col-2 m-auto">
-                                        <img class="w-100" src="asset/img/Surgical-Product.png" alt="category icon">
-                                    </div>
-                                    <h2 class="mt-2">Surgical Product</h2>
-                                </a>
-                            </div>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/medicin.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Medicine</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon  m-auto">
+                                    <img class="w-100" src="asset/img/Diagnostic-Center.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Diagnostic Center</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon  m-auto">
+                                    <img class="w-100" src="asset/img/dental.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Dental Care</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon  m-auto">
+                                    <img class="w-100" src="asset/img/Surgical-Product.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Surgical Product</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/Medical-Equipment.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Medical Equipment</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/baby-care.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Baby Care</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/woman-care.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Women's Care</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/personal-care.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Personal Care</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/dental.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Dental Care</h2>
+                            </a>
+                            <a href="#" class="col-6 text-center single-cat text-decoration-none">
+                                <div class="icon m-auto">
+                                    <img class="w-100" src="asset/img/Surgical-Product.png" alt="category icon">
+                                </div>
+                                <h2 class="mt-2">Surgical Product</h2>
+                            </a>
                         </div>
                     </div>
-                </div>
+                </section>
                 <!--========= Slider-Section-start ========-->
-                <div class="col-9 content-col">
-                    <div class="slider-sction pb-5">
+                <div class="col-md-9 col-lg-10 content-col">
+                    <section class="slider-sction pb-5">
                         <div class="row">
                             <div class="col">
                                 <div class="slider-main">
@@ -306,280 +287,298 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                     <!--========= Slider-Section-End ========-->
                     <!--========= Product-Section-Start ========-->
-                    <div class="product-section pt-4 pb-5">
-                        <div class="row">
-                            <div class="col">
-                                <div class="row">
-                                    <div class="col-3 best-selling-col">
-                                        <h2 class="title mb-4">Best Selling</h2>
-                                        <div class="row all-product">
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/jumper-jpd-500d-oled-version.png" alt="">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">Jumper Pulse Oximeter JPD-500
-                                                                D Device</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>1500</h4>
-                                                    </div>
+                    <section class="product-section pt-4 pb-5">
+                            <div class="row">
+                                <div class="col-3 best-selling-col">
+                                    <h2 class="title mb-4">Best Selling</h2>
+                                    <div class="all-product">
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/jumper-jpd-500d-oled-version.png" alt="">
                                                 </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product01.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">glipita m 50/500</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>14</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product02.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">ORAL-C 125ML Mouth Wash</a>
-                                                        </h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>75</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product03.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">SENSODYNE FRESH MINT 150 GM
-                                                                Toiletries</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>185</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product04.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">Savlon Baby Wipes</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>14</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product03.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">SENSODYNE FRESH MINT 150 GM
-                                                                Toiletries</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>185</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product04.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">Savlon Baby Wipes</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>14</h4>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 single-item">
-                                                <div class="row">
-                                                    <div class="col-4 img">
-                                                        <img class="w-100 border border-1 rounded-1"
-                                                            src="asset/img/product03.png" alt="Product Image">
-                                                    </div>
-                                                    <div class="col-8">
-                                                        <h3 class="pdct-title"><a href="#">SENSODYNE FRESH MINT 150 GM
-                                                                Toiletries</a></h3>
-                                                        <h4 class="pdct-price"><span>&#2547;</span>185</h4>
-                                                    </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">Jumper Pulse Oximeter JPD-500
+                                                            D Device</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>1500</h4>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-9 ps-4">
-                                        <div class="row cat-filter-row">
-                                            <div class="col-4">
-                                                <h2 class="title">Featured Products</h2>
-                                            </div>
-                                            <div class="col-8">
-                                                <ul class="cat-list">
-                                                    <li><a href="#" class="active">All</a></li>
-                                                    <li><a href="#">Medicine</a></li>
-                                                    <li><a href="#">Diagnostic Center</a></li>
-                                                    <li><a href="#">Medical Equipment</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row all-products mt-3">
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product01.png" alt="Product Image">
                                                 </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/Taylor_Brace.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/jumper-jpd-500d-oled-version.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/product05.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
-                                                </div>
-                                            </div>
-                                            <div class="col-3 single-pdct p-0">
-                                                <div class="pdct-img">
-                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
-                                                </div>
-                                                <div class="pdct-info">
-                                                    <h3>glipita m 50/500</h3>
-                                                    <h3>Metformin Hydrochloride</h3>
-                                                    <h4><span>&#2547;</span>14</h4>
-                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
-                                                            alt="">Add to Cart</a>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">glipita m 50/500</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>14</h4>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row show-more mt-5">
-                                            <a class="all-pdct-btn text-center" href="#">All Products</a>
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product02.png" alt="Product Image">
+                                                </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">ORAL-C 125ML Mouth Wash</a>
+                                                    </h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>75</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product03.png" alt="Product Image">
+                                                </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">SENSODYNE FRESH MINT 150 GM
+                                                            Toiletries</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>185</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product04.png" alt="Product Image">
+                                                </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">Savlon Baby Wipes</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>14</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product03.png" alt="Product Image">
+                                                </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">SENSODYNE FRESH MINT 150 GM
+                                                            Toiletries</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>185</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product04.png" alt="Product Image">
+                                                </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">Savlon Baby Wipes</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>14</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 single-item">
+                                            <div class="row">
+                                                <div class="col-4 img">
+                                                    <img class="w-100 border border-1 rounded-1"
+                                                        src="asset/img/product03.png" alt="Product Image">
+                                                </div>
+                                                <div class="col-8">
+                                                    <h3 class="pdct-title"><a href="#">SENSODYNE FRESH MINT 150 GM
+                                                            Toiletries</a></h3>
+                                                    <h4 class="pdct-price"><span>&#2547;</span>185</h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-9">
+                                    <div class="row cat-filter-row">
+                                        <div class="col-4">
+                                            <h2 class="title">Featured Products</h2>
+                                        </div>
+                                        <div class="col-8">
+                                            <ul class="cat-list">
+                                                <li><a href="#" class="active">All</a></li>
+                                                <li><a href="#">Medicine</a></li>
+                                                <li><a href="#">Diagnostic Center</a></li>
+                                                <li><a href="#">Medical Equipment</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row all-products mt-3">
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">
+                                            <div class="single-pdct">
+                                                <div class="pdct-img">
+                                                    <img class="w-100" src="asset/img/pdct01.png" alt="Product Image">
+                                                </div>
+                                                <div class="pdct-info">
+                                                    <h3>glipita m 50/500</h3>
+                                                    <h3 >Metformin Hydrochloride</h3>
+                                                    <h4><span>&#2547;</span>14</h4>
+                                                    <a class="cart-btn" href="#"><img src="asset/img/cart-icon.svg"
+                                                            alt="">Add to Cart</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>  
+                                    <div class="row show-more mt-5">
+                                        <a class="all-pdct-btn text-center" href="#">All Products</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                    </section>
                     <!--====== Delivery Slider Section ======-->
-                    <div class="delivery-slider-section py-5">
+                    <section class="delivery-slider-section py-5">
                         <div class="row">
                             <div class="col">
                                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                                     <div class="carousel-indicators">
-                                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                            aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                            aria-label="Slide 3"></button>
                                     </div>
                                     <div class="carousel-inner">
-                                      <div class="carousel-item active" data-bs-interval="10000">
-                                        <img src="asset/img/slider-bg-01.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                          <h5>First slide label</h5>
-                                          <p>Some representative placeholder content for the first slide.</p>
+                                        <div class="carousel-item active" data-bs-interval="10000">
+                                            <img src="asset/img/slider-bg-01.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>First slide label</h5>
+                                                <p>Some representative placeholder content for the first slide.</p>
+                                            </div>
                                         </div>
-                                      </div>
-                                      <div class="carousel-item" data-bs-interval="2000">
-                                        <img src="asset/img/slider-bg-02.jpg" class="d-block w-100" alt="...">
-                                        <div class="carousel-caption d-none d-md-block">
-                                          <h5>Second slide label</h5>
-                                          <p>Some representative placeholder content for the second slide.</p>
+                                        <div class="carousel-item" data-bs-interval="2000">
+                                            <img src="asset/img/slider-bg-02.jpg" class="d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block">
+                                                <h5>Second slide label</h5>
+                                                <p>Some representative placeholder content for the second slide.</p>
+                                            </div>
                                         </div>
-                                      </div>
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Previous</span>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
                                     </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                      <span class="visually-hidden">Next</span>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
                                     </button>
-                                  </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <img src="asset/img/inner-jbanner.png" alt="">
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
     </main>
@@ -588,7 +587,7 @@
     <!--------- Footer-secion-Start ---------->
     <!--xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx-->
     <footer>
-        <div class="footer-section">
+        <section class="footer-section">
 
             <!--======== Footer Deivery Row ===========-->
             <div class="delivery-row p-5">
@@ -731,7 +730,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!--======== Socket Row =========-->
         <div class="socket-row p-3">
             <div class="container">
@@ -745,15 +744,16 @@
         </div>
     </footer>
 
+    <!--========= jquery-cdn ===========-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!--======== bootstrap script ========-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 
-    <!--========= jquery-cdn ===========-->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+    <!--========= uikit-js ===========-->
+    <script src="asset/js/uikit.min.js"></script>
     <!--========== custom-js ===========-->
     <script src="/asset/js/custom.js"></script>
 </body>

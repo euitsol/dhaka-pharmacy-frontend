@@ -13,11 +13,12 @@
     background: transparent;
     color: var(--nav-text-color);
     border: 2px solid #fff;
-    padding: 6px;
+    padding: 7px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
     font-weight: 600;
+    border-radius: 10px 0 0 10px;
   }
   .header-section .search-filter select {
     border: none;
@@ -42,6 +43,10 @@
     color: var(--nav-text-color);
     background: transparent;
     padding: 6px;
+    border-radius: 0px 10px 11px 0;
+  }
+  .header-section .right-col .item{
+    width: inherit;
   }
   .header-section .right-col button {
     background: transparent;
