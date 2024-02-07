@@ -6,6 +6,7 @@
     position: sticky;
     top: 0;
     z-index: 99;
+    width: 100%;
   }
   .header-section .search-filter input {
     border: none;

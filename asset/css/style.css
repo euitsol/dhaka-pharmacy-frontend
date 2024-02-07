@@ -34,11 +34,14 @@ body{
 /*============== Slider-section-style ==================*/
 .sidebar-cat-section {
   z-index: 9;
+  padding-bottom: 20px;
 }
 .sidebar-cat-section .sticky-col{
   background: var(--text-color-white);
   box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
   border-radius: 10px;
+  position: sticky;
+  top: 110px;
 }
 .sidebar-cat-section .row .single-cat {
   padding: 10px;
@@ -115,7 +118,14 @@ body{
   position: relative;
   z-index: 9 !important;
 }
-.slider-sction .slider-main .carousel-inner .carousel-caption {
+.slider-sction .uk-slideshow-items{
+  height: 665px;
+  border-radius: 10px;
+}
+.slider-sction .uk-slideshow-items:hover{
+  cursor:grab;
+}
+.slider-sction .carousel-caption {
   top: 50% !important;
   bottom: inherit !important;
   transform: translateY(-50%);
@@ -125,18 +135,18 @@ body{
   padding: 0;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .row {
+.slider-sction .carousel-caption .row {
   height: 100%;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left,
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-right {
+.slider-sction .carousel-caption .slider-left,
+.slider-sction .carousel-caption .slider-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left h3 {
+.slider-sction .carousel-caption .slider-left h3 {
   font-family: 'Poppins', sans-serif;
   font-size: 25px;
   line-height: 47px;
@@ -145,7 +155,7 @@ body{
   animation: fadeInup 2s ease-in-out;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left h2 {
+.slider-sction .carousel-caption .slider-left h2 {
   font-family: 'Poppins', sans-serif;
   font-size: 78px;
   line-height: 83px;
@@ -154,14 +164,14 @@ body{
   animation: fadeInup 2s ease-in-out;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left .btns {
+.slider-sction .carousel-caption .slider-left .btns {
   column-gap: 18px;
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left .btns a {
+.slider-sction .carousel-caption .slider-left .btns a {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   line-height: 38px;
@@ -176,27 +186,27 @@ body{
   z-index: 9999;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left .btns .reg {
+.slider-sction .carousel-caption .slider-left .btns .reg {
   animation: fadeInright 3s ease-in-out;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left .btns .reg:hover {
+.slider-sction .carousel-caption .slider-left .btns .reg:hover {
   background-color: var(--asent-color);
   color: var(--text-color-white);
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left .btns .order {
+.slider-sction .carousel-caption .slider-left .btns .order {
   background-color: var(--asent-color);
   color: var(--text-color-white);
   animation: fadeInleft 3s ease-in-out;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-left .btns .order:hover {
+.slider-sction .carousel-caption .slider-left .btns .order:hover {
   background-color: transparent;
   color: var(--text-color-black);
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-right {
+.slider-sction .carousel-caption .slider-right {
   background-image: url(../img/Dhaka-Pharmachy-Banner.png);
   background-position-y: bottom;
   background-repeat: no-repeat;
@@ -206,38 +216,46 @@ body{
   animation: fadeInup 2s ease-in-out;
 }
 
-.slider-sction .slider-main .carousel-inner .carousel-caption .slider-right img {
+.slider-sction .carousel-caption .slider-right img {
   max-width: 550px;
   animation: zoomin 3s ease-in-out;
 }
 
-.slider-sction .slider-main .carousel-control-prev {
-  width: inherit;
-  height: auto;
-  top: inherit;
-  bottom: 15px;
-  left: 50% !important;
-  transform: translateX(-150%);
-  background: #000;
+.slider-sction .uk-slideshow .uk-position-center-left svg{
+  background: transparent;
+  color: var(--text-color-black);
+  border: 1px solid var(--text-color-black);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  padding: 6px;
+} 
+.slider-sction .uk-slideshow{
+  position: relative;
+}
+.slider-sction .uk-slideshow .uk-position-center-right svg{
+  background: transparent;
+  color: var(--text-color-black);
+  border: 1px solid var(--text-color-black);
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
   padding: 6px;
 }
-
-.slider-sction .slider-main .carousel-control-next {
-  width: inherit;
-  height: auto;
-  top: inherit;
-  bottom: 15px;
-  right: 50% !important;
-  transform: translateX(40px);
-  background: #000;
-  border-radius: 50%;
-  padding: 6px;
+.slider-sction .uk-slideshow .uk-dotnav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
-
-.slider-sction .slider-main .slide button span {
-  width: 25px;
-  height: 25px;
+.slider-sction .uk-slideshow .uk-dotnav li{
+  padding-right: 0;
+}
+.slider-sction .uk-slideshow .uk-dotnav li a{
+  border-color: var(--text-color-black);
+}
+.slider-sction .uk-slideshow .uk-dotnav .uk-active a{
+  background: var(--text-color-black);
 }
 /*================== Home Product Section ==============*/
 .product-section h2.title{
@@ -388,9 +406,79 @@ body{
   background: transparent;
 }
 /*============ Home Delivery Section ================*/
-.delivery-slider-section .carousel .carousel-inner img{
-  height: 300px;
-  object-fit: contain;
+.delivery-slider-section .uk-slideshow{
+  position: relative;
+}
+.delivery-slider-section .uk-slideshow-items{
+  height: 320px;
+}
+.delivery-slider-section .uk-slideshow-items:hover{
+  cursor:grab;
+}
+.delivery-slider-section .uk-slideshow-items img{
+  filter: brightness(0.5);
+} 
+.delivery-slider-section .uk-slideshow-items .carousel-caption{
+  bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: 50%;
+  transform: translateY(-65%);
+}
+.delivery-slider-section .uk-slideshow-items .carousel-caption h2{
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: 36px;
+  font-weight: 600;
+  color: var(--text-color-white);
+  margin-bottom: 23px;
+}
+.delivery-slider-section .uk-slideshow-items .carousel-caption a{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  background: var(--secundary-color);
+  color: var(--text-color-white);
+  text-decoration: none;
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: 1px solid var(--secundary-color);
+  transition: 0.4s;
+}
+.delivery-slider-section .uk-slideshow-items .carousel-caption a:hover{
+  color: var(--asent-color);
+  background: transparent;
+}
+.delivery-slider-section .uk-slideshow-items .carousel-caption h3{
+  font-family: "Open Sans", sans-serif;
+  font-size: 45px;
+  line-height: 67px;
+  font-weight: 600;
+  color: var(--text-color-white);
+  margin-top: 15px;
+}
+.delivery-slider-section .uk-slideshow-items .carousel-caption h4{
+  font-family: "Open Sans", sans-serif;
+  font-size: 25px;
+  line-height: 31px;
+  font-weight: 600;
+  color: var(--text-color-white);
+}
+.delivery-slider-section .uk-slideshow .uk-dotnav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.delivery-slider-section .uk-slideshow .uk-dotnav li{
+  padding-right: 0;
+}
+.delivery-slider-section .uk-slideshow .uk-dotnav li a{
+  border-color: var(--text-color-white);
+}
+.delivery-slider-section .uk-slideshow .uk-dotnav .uk-active a{
+  background: var(--text-color-white);
 }
 /*=============== Footer section style =================**/
 .footer-section .container {
@@ -434,6 +522,7 @@ body{
   background: #DCDCDC;
   padding: 4.5px 8px;
   color: #000;
+  border-radius: 10px;
 }
 
 .footer-section .newsletter-row form input[type=text]:focus {
@@ -455,6 +544,7 @@ body{
   margin-left: 10px;
   border: 1px solid #2D98DA;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
 .footer-section .newsletter-row form input[type=submit]:hover {
@@ -592,22 +682,24 @@ body{
 
 .footer-section .main-footer-row .footer-contact .footer-nav li a.map::before {
   content: "\f3c5";
+  top: 20%;
 }
 
 .footer-section .main-footer-row .footer-contact .footer-nav li a.phn::before {
   content: "\f095";
+  top: 53%;
 }
 
 .footer-section .main-footer-row .footer-contact .footer-nav li a.mail::before {
   content: "\f0e0";
+  top: 58%;
 }
-
-.footer-section .socket-row {
+.socket-row{
   background: var(--primary-bg);
   border-top: 1px solid var(--input-border-color);
-}
+} 
 
-.footer-section .socket-row p {
+.socket-row p {
   font-family: 'Poppins', sans-serif;
   font-size: 14px;
   line-height: 21px;
