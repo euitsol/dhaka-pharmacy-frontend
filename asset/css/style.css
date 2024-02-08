@@ -243,10 +243,9 @@ body{
   padding: 6px;
 }
 .slider-sction .uk-slideshow .uk-dotnav {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: -30px;
+  z-index: 9999;
+  position: relative;
 }
 .slider-sction .uk-slideshow .uk-dotnav li{
   padding-right: 0;
@@ -304,28 +303,49 @@ body{
   color: var(--secundary-color);
   margin: 0;
 }
-.product-section .cat-filter-row .cat-list{
-  display: flex;
-  justify-content: end;
-  column-gap: 10px;
+.product-section .cat-filter-row{
+  column-gap: 4%;
 }
 .product-section .cat-filter-row .cat-list li{
   list-style: none;
+  text-align: center;
 }
 .product-section .cat-filter-row .cat-list li a{
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 31px;
   font-weight: 600;
-  color: var(--text-color-black);
+  color: #000;
   transition: 0.4s;
+}
+.product-section .cat-filter-row .cat-list .uk-slide-active a{  
+  position: relative;
+}
+.product-section .cat-filter-row .cat-list .uk-slide-active a::after{  
+  position: absolute;
+  content: "";
+  background: var(--secundary-color);
+  width: calc(100% + 5px);
+  height: 2px;
+  bottom: -15%;
+  left: 50%;
+  transform: translatex(-50%);
 }
 .product-section .cat-filter-row .cat-list li a:hover{
   color: var(--asent-color);
 }
 .product-section .cat-filter-row .cat-list li .active{
   border-bottom: 2px solid var(--asent-color);
+}
+.product-section .btn-arrow svg{
+  background: transparent;
+  color: var(--text-color-black);
+  border: 1px solid var(--text-color-black);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  padding: 3px;
 }
 .product-section .all-products .pdct-info h3{
   font-family: "Open Sans", sans-serif;
@@ -466,10 +486,9 @@ body{
   color: var(--text-color-white);
 }
 .delivery-slider-section .uk-slideshow .uk-dotnav {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
+  margin-top: -30px;
+  z-index: 9999;
+  position: relative;
 }
 .delivery-slider-section .uk-slideshow .uk-dotnav li{
   padding-right: 0;
@@ -507,6 +526,7 @@ body{
   background: #072365;
   z-index: 99;
   position: relative;
+  padding: 35px 0;
 }
 
 .footer-section .newsletter-row .title {
@@ -515,16 +535,21 @@ body{
   line-height: 21px;
   font-weight: 400;
 }
-
+.footer-section .newsletter-row form input{
+  height: 45px;
+}
 .footer-section .newsletter-row form input[type=text] {
-  width: 75%;
+  width: 74%;
   border: none;
-  background: #DCDCDC;
-  padding: 4.5px 8px;
+  background: rgba(220, 220, 220, 85%);
+  padding: 0px 15px;
   color: #000;
   border-radius: 10px;
+  margin-right: 1%;
 }
-
+.footer-section .newsletter-row form input[type=text]::placeholder{
+  color: #141414;
+}
 .footer-section .newsletter-row form input[type=text]:focus {
   border: none;
   outline: none;
@@ -540,7 +565,7 @@ body{
   text-transform: uppercase;
   background: #2D98DA;
   border: none;
-  padding: 5px 15px;
+  padding: 0px 24px;
   margin-left: 10px;
   border: 1px solid #2D98DA;
   transition: 0.3s;

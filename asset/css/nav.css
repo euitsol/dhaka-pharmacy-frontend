@@ -3,8 +3,8 @@
     padding: 15px 0;
     background: var(--nav-primary-bg);
     animation: fadeIndown 1.5s ease-in-out;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     z-index: 99;
     width: 100%;
   }
@@ -12,14 +12,18 @@
     border: none;
     outline: none;
     background: transparent;
-    color: var(--nav-text-color);
+    color: #fff;
     border: 2px solid #fff;
     padding: 7px;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 600;
+    font-weight: 500;
     border-radius: 10px 0 0 10px;
+  }
+  .header-section .search-filter input[type=text]::placeholder{
+    color: rgba(255, 255, 255, 70%);
+    font-weight: 500;
   }
   .header-section .search-filter select {
     border: none;
@@ -32,7 +36,7 @@
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
     line-height: 21px;
-    font-weight: 600;
+    font-weight: 500;
   }
   .header-section .search-filter select option {
     background: var(--nav-primary-bg);
