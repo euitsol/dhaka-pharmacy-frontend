@@ -499,6 +499,159 @@ body{
 .delivery-slider-section .uk-slideshow .uk-dotnav .uk-active a{
   background: var(--text-color-white);
 }
+
+/************* User Login page style ***************/
+.user-login-section .main-col{
+  border: 25px solid #A8C539;
+}
+.user-login-section .right-col{
+  background: var(--secundary-color);
+  width: 100%;
+  height: 100%;
+}
+.user-login-section .col-6:first-child{
+  position: relative;
+  z-index: 99;
+}
+.user-login-section .col-6:first-child::after{
+  position: absolute;
+  content: "";
+  background: var(--secundary-color);
+  height: calc(100% + 38px);
+  width: 159px;
+  transform: rotate(9deg);
+  right: -89px;
+  top: -20px;
+  z-index: -9;
+}
+.user-login-section .col-6:last-child{
+  z-index: 9999;
+}
+.user-login-section .right-col .form-col{
+  width: 400px;
+  background:var(--text-color-white);
+  padding: 35px 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.user-login-section .right-col .form-col form input{
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  padding-bottom: 5px;
+}
+.user-login-section .right-col .form-col form input::placeholder{
+  font-size: 18px;
+  line-height: 25px;
+  color: rga(0, 0, 0, 66%);
+}
+.user-login-section .right-col .form-col form .phn{
+  position: relative;
+  border-bottom: 1px solid #000;
+  margin-bottom: 25px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.user-login-section .right-col .form-col form .phn::before{
+  position: absolute;
+  content: "";
+  background-image: url(../img/phone.png);
+  width: 17px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 50%;
+  background-size: contain;
+  transform: translateY(-62%);
+  left: 0px;
+}
+.user-login-section .right-col .form-col form .pass{
+    position: relative;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-bottom: 25px;
+  }
+.user-login-section .right-col .form-col form .pass::before{
+  position: absolute;
+  content: "";
+  background-image: url(../img/lock-icon.png);
+  width: 13px;
+  height: 20px;
+  background-repeat: no-repeat;
+  top: 50%;
+  background-size: contain;
+  transform: translateY(-58%);
+  left: 0;
+}
+
+.user-login-section .right-col .form-col form .remember input[type="checkbox"]{
+  width: inherit;
+  margin-right: 7px;
+}
+.user-login-section .right-col .form-col form input[type="submit"]{
+  width: 115px;
+  height: 39px;
+  padding: 0;
+  padding-bottom: 6px;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-color-white);
+  background: var(--secundary-color);
+  border-radius: 7px;
+  border: 1px solid var(--asent-color);
+  transition: 0.4s;
+}
+.user-login-section .right-col .form-col form input[type="submit"]:hover{
+  color: var(--asent-color);
+  background: transparent;
+}
+.user-login-section .bottom-info{
+  width: 400px;
+  margin-top: 45px;
+}
+.user-login-section .bottom-info .login-btns a{
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: var(--text-color-white);
+  border: 1px solid var(--input-border-color);
+  padding: 10px 12px;
+  border-radius: 10px;
+  transition: 0.4s;
+  margin-bottom: 20px;
+}
+.user-login-section .bottom-info .login-btns a:hover{
+  background: var(--text-color-white);
+  color: var(--asent-color);
+
+}
+.user-login-section .create-acc{
+  text-align: center;
+  margin-top: 35px;
+}
+.user-login-section .create-acc h3{
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 400;
+  color: var(--text-color-white);
+}
+.user-login-section .create-acc a{
+  text-decoration: none;
+  text-align: center;
+  color: #000B59;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: 700;
+  transition: 0.4s;
+}
+.user-login-section .create-acc a:hover{
+  color: var(--text-color-white);
+}
 /*=============== Footer section style =================**/
 .footer-section .container {
   max-width: 90%;
